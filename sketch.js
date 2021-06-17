@@ -36,16 +36,18 @@ function setup() {
       logGroup1.add(log.spt);
     }
 
-   //below create player object using the code - player = new Player(width/2,height-75);
-   
+   //create player
+   player = new Player(width/2,height-75);
+
+    
+
    
  }
 
 function draw() {
   background("skyblue");
-  //move the screen to location of player. Write the translate function.
+  //move the screen to location of player. Use translate. See hint
   
-
   //Making the cars re-apper
   for(i=1;i<carGroup1.length;i++) {
     if(carGroup1[i].x>width)
@@ -69,5 +71,11 @@ function draw() {
   drawSprites();
 }
 
-//Below write code for keyPressed. See hint
 
+//Below write code for function keyPressed(). See hint.
+function keyPressed() {
+	if (keyCode === DOWN_ARROW) {
+	   // Look at the hints in the document and understand how to make the package body fall only on press of the Down arrow key.
+   Matter.Body.setStatic(Player,false);
+	}
+}
