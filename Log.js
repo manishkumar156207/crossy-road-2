@@ -8,8 +8,7 @@ class Log{
         this.spt = createSprite(this.x,this.y,this.width,this.height);
         this.spt.velocityX = this.speed;
         this.spt.shapeColor = "brown";
-        this.spt.addAnimation("log",logAnimation);
-        this.spt.scale=0.05;
+        this.spt.scale=0.1;
     }
 
    

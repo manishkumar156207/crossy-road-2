@@ -1,18 +1,9 @@
 class Player{
-    constructor(x,y){
-        this.x = x;
-        this.y = y;
-		this.spt=createSprite(this.x, this.y, 50,50);
-        this.spt.shapeColor="orange";	
-       // Below write code to add animation
-       
-        this.spt.scale=0.05;
-    }
-    
-	move(xdir,ydir){
-        this.spt.x += xdir*grid;
-		this.spt.y += ydir*grid;
-    }
+    // Write the code to add constructor. See hint in project document.
+
+
+
+    //Add a method move in the class Player.See hint
 	
 }
 

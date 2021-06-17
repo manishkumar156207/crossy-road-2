@@ -7,9 +7,7 @@ var carAnimation, logAnimation, playerAnimation;
 var school;
 function preload()
 {
-  // load all images. I have done one.
-  carAnimation1=loadAnimation("images/car1.png");
-  
+ 
 }
 
 function setup() {
@@ -38,15 +36,15 @@ function setup() {
       logGroup1.add(log.spt);
     }
 
-   //create player
-   player = new Player(width/2,height-75);
+   //below create player object using the code - player = new Player(width/2,height-75);
+   
    
  }
 
 function draw() {
   background("skyblue");
-  //move the screen to location of player.
-  translate(0,-player.spt.y+height-150);
+  //move the screen to location of player. Write the translate function.
+  
 
   //Making the cars re-apper
   for(i=1;i<carGroup1.length;i++) {
@@ -68,24 +66,8 @@ function draw() {
     }
   }
  
-    //to make the player go to the starting position if he will touch car
-  
-
-   //to make the player float on the logs and if he will touch the river then he will again start 
- 
-
- 
   drawSprites();
 }
 
-function keyPressed(){
-  if(keyCode == UP_ARROW){
-    player.move(0,-2);
-  }else if(keyCode == DOWN_ARROW){
-    player.move(0,2);
-  }else if(keyCode == LEFT_ARROW){
-    player.move(-2,0);
-  }else if(keyCode == RIGHT_ARROW){
-    player.move(2,0);
-  }
-}
+//Below write code for keyPressed. See hint
+
